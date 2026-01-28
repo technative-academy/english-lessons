@@ -1,0 +1,11 @@
+@import "global.css";
+@import "color-palette.css";
+@import "fonts.css";
+@import "typography.css";
+
+/* components */
+@import "components/navigation.css";
+@import "components/button.css";
+@import "components/footer.css";
+@import "components/user-profile.css";
+@import "components/picture-box.css";
