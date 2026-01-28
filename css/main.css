@@ -3,6 +3,7 @@
 @import "fonts.css";
 @import "typography.css";
 @import "about.css";
+@import "index.css";
 
 /* components */
 @import "components/navigation.css";

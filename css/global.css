@@ -30,5 +30,10 @@ h6 {
 }
 
 section {
-  margin: 50px;
+  padding: 50px;
+}
+
+section.grey,
+section.gray {
+  background: var(--color-bg-block);
 }
