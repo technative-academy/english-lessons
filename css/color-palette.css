@@ -1,0 +1,35 @@
+:root {
+  --color-tw-emerald-950: oklch(0.262 0.051 172.552);
+  --color-tw-emerald-900: oklch(0.378 0.077 168.94);
+  --color-tw-emerald-800: oklch(0.432 0.095 166.913);
+  --color-tw-emerald-700: oklch(0.508 0.118 165.612);
+  --color-tw-emerald-600: oklch(0.596 0.145 163.225);
+  --color-tw-emerald-500: oklch(0.696 0.17 162.48);
+  --color-tw-emerald-400: oklch(0.765 0.177 163.223);
+  --color-tw-emerald-300: oklch(0.845 0.143 164.978);
+  --color-tw-emerald-200: oklch(0.905 0.093 164.15);
+  --color-tw-emerald-100: oklch(0.95 0.052 163.051);
+  --color-tw-emerald-50: oklch(0.979 0.021 166.113);
+
+  --color-tw-slate-950: oklch(0.129 0.042 264.695);
+  --color-tw-slate-900: oklch(0.129 0.042 264.695);
+  --color-tw-slate-800: oklch(0.279 0.041 260.031);
+  --color-tw-slate-700: oklch(0.372 0.044 257.287);
+  --color-tw-slate-600: oklch(0.446 0.043 257.281);
+  --color-tw-slate-500: oklch(0.554 0.046 257.417);
+  --color-tw-slate-400: oklch(0.704 0.04 256.788);
+  --color-tw-slate-300: oklch(0.869 0.022 252.894);
+  --color-tw-slate-200: oklch(0.929 0.013 255.508);
+  --color-tw-slate-100: oklch(0.968 0.007 247.896);
+  --color-tw-slate-50: oklch(0.984 0.003 247.858);
+
+  /* mirroring palette on Figma */
+  --color-primary: var(--color-tw-emerald-400);
+  --color-primary-tint: var(--color-tw-emerald-100);
+
+  --color-text-heading: var(--color-tw-slate-800);
+  --color-text-body: var(--color-tw-slate-700);
+
+  --color-bg-block: var(--color-tw-slate-100);
+  --color-bg-footer: var(--color-tw-slate-900);
+}
