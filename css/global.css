@@ -1,6 +1,22 @@
-/* global styles on body, root, etc. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-* {
+/* !! global styles on body, root, etc. */
+
+/* Border-box model makes more sense */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* remove default body margins */
+  margin: 0;
+
+  /* set default font to Inter */
+  font-family: "Inter", sans-serif;
+
+  /* set default text color */
   color: var(--color-text-body);
 }
 
