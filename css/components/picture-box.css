@@ -46,3 +46,8 @@
     }
   }
 }
+
+.photo-description {
+  color: hsl(from var(--color-text-body) h s l / 80%);
+  align-items: center;
+}
