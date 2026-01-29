@@ -51,3 +51,13 @@
   color: hsl(from var(--color-text-body) h s l / 80%);
   align-items: center;
 }
+
+.hideProduct {
+  visibility: hidden;
+  height: 0em;
+}
+
+.showProduct {
+  visibility: visible;
+  height: auto;
+}
