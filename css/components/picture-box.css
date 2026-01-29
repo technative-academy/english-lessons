@@ -60,4 +60,5 @@
 .showProduct {
   visibility: visible;
   height: auto;
+  list-style: none;
 }
