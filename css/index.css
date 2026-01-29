@@ -1,20 +1,3 @@
-.two-column {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-
-  > * {
-    flex: 1;
-  }
-}
-
-.fact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 12em);
-  justify-content: center;
-
-  gap: 2em;
-}
 .fact {
   display: flex;
   flex-direction: column;

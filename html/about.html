@@ -30,9 +30,9 @@
       <span>A tagline.</span>
     </section>
 
-    <section class="rows">
-      <div class="column" id="who_are_we">
-        <h3>We are great. <br />Reall great.</h3>
+    <section class="horizontal">
+      <div class="" id="who_are_we">
+        <h3>We are great. <br />Really great.</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -46,17 +46,22 @@
           laborum.
         </p>
       </div>
-      <div class="column" id="photo_of_us">
+      <div id="photo_of_us">
         <div class="picture-box">
-          <img src="../assets/about-us.png" alt="Photo of a group lesson" />
+          <img
+            src="../assets/about-us.png"
+            alt="Photo of a group lesson"
+            style="border: 1px solid #0003"
+          />
+          <!-- style-hack to add a border, background is pure white -->
         </div>
         <div class="photo-description">
           <p>ac tortor vitae purus faucibus.</p>
         </div>
       </div>
     </section>
-    <section class="rows" id="map_address_and_contact">
-      <div class="column" id="map_address">
+    <section class="horizontal" id="map_address_and_contact">
+      <div id="map_address">
         <div id="map_insert">
           <iframe
             src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1480042934417725%2C50.8298487171975%2C-0.13815522193908694%2C50.83492411949926&amp;layer=mapnik"
@@ -70,15 +75,15 @@
         </div>
 
         <div id="map_text">
-          <h6>Our address</h6>
-          <div id="address">
-            <p>48 Fake Street</p>
-            <p>Fakesville</p>
-            <p>FK1 1FK</p>
-          </div>
+          <h4>Our address</h4>
+          <address id="address">
+            48 Fake Street<br />
+            Fakesville<br />
+            FK1 1FK
+          </address>
         </div>
       </div>
-      <div class="column" id="contact_us">
+      <div id="contact_us">
         <h3>Contact us</h3>
         <div class="contact_form">
           <p>
@@ -112,30 +117,34 @@
 
     <footer>
       <div class="footer_links">
-        <p class="footer_category">Company</p>
-        <ul>
-          <li class="footer_navbar"><a href="about.html">About us</a></li>
-          <li class="footer_navbar">
-            <a href="about.html#contact">Contact us</a>
-          </li>
-        </ul>
+        <div>
+          <p class="footer_category">Company</p>
+          <ul>
+            <li class="footer_navbar"><a href="about.html">About us</a></li>
+            <li class="footer_navbar">
+              <a href="about.html#contact">Contact us</a>
+            </li>
+          </ul>
+        </div>
 
-        <p class="footer_category">Legal</p>
-        <ul>
-          <li class="footer_navbar"><a href="#">Cookies Policy</a></li>
-          <li class="footer_navbar"><a href="#">Privacy Policy</a></li>
-          <li class="footer_navbar"><a href="#">Terms of Service</a></li>
-        </ul>
+        <div>
+          <p class="footer_category">Legal</p>
+          <ul>
+            <li class="footer_navbar"><a href="#">Cookies Policy</a></li>
+            <li class="footer_navbar"><a href="#">Privacy Policy</a></li>
+            <li class="footer_navbar"><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer_line">
         <hr />
       </div>
       <div class="true_footer">
         <div>
-          <p>&copy2024 - All rights reserved</p>
+          <p>&copy; 2024 - All rights reserved</p>
         </div>
         <div>
-          <ul>
+          <ul class="socials">
             <li class="social_media_icon">
               <a href="https://www.twitter.com/" target="_blank"
                 ><img

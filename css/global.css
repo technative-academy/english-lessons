@@ -55,67 +55,45 @@ h6 {
   font-size: 1em;
 }
 
-section {
-  padding: 50px;
+/* basic layout constructs */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 12em);
+  justify-content: center;
+
+  gap: 2em;
 }
 
-section.grey,
-section.gray {
-  background: var(--color-bg-block);
+div.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section.semicircle .shape {
-  /* size and positioning */
+div.left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+div.right {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+/* forms */
+input,
+textarea {
+  display: flex;
   width: 100%;
-  height: var(--height);
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* actual background color */
-  background: var(--color-bg-block);
-
-  /* "cuts out" an ellipse (semicircle)
-     from the background */
-  --curvature: 70%;
-  --pos-x: 50%;
-  --pos-y: -20%;
-  clip-path: ellipse(var(--curvature) 100% at var(--pos-x) var(--pos-y));
-}
-section.semicircle .shape-wrapper {
-  /* size and positioning */
-  width: 100%;
-  height: var(--height);
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* go behind the text */
-  z-index: -1;
-
-  /* outline the semicircle */
-  filter: drop-shadow(
-    0px 2px 0px hsl(from var(--color-bg-block) h calc(s - 10) calc(l - 10))
-  );
+  padding: 1em 1.2em;
+  border: 1px solid var(--color-tw-slate-400);
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
 }
 
-section.semicircle {
-  /* we need a variable to "propagate" height down.
-    inherit keyword does not work
-    (because of position: absolute?)
-    it's set to a default of 16em here, but can be overriden
-    with the --h variable (e.g. in a style attribute) */
-  --height: var(--h, 16em);
-  height: var(--height);
-
-  /* position the shape children relative to this container */
-  position: relative;
-
-  /* header & text positioning */
-  text-align: center;
-  h1,
-  h2,
-  h3 {
-    margin: 0 0 0.7em;
-  }
+::placeholder {
+  color: var(--color-tw-slate-300);
 }
