@@ -4,8 +4,8 @@
   border: none;
   text-align: left;
   font-size: x-small;
-  border-radius: 0px;
-  border-top: 0px;
+  border-radius: 0;
+  border-top: 0;
 }
 
 button.active {
@@ -13,11 +13,9 @@ button.active {
 }
 
 .tab-content {
-  visibility: hidden;
-  height: 0em;
+  display: none;
 }
 
 .quoteSelected {
-  visibility: visible;
-  height: auto;
+  display: initial;
 }
