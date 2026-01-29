@@ -1,0 +1,21 @@
+.user_profile {
+  background-color: var(--color-bg-block);
+  color: var(--color-text-body);
+  border: none;
+  text-align: left;
+  font-size: x-small;
+  border-radius: 0;
+  border-top: 0;
+}
+
+button.active {
+  border-top: 1px solid var(--color-primary);
+}
+
+.tab-content {
+  display: none;
+}
+
+.quoteSelected {
+  display: initial;
+}
