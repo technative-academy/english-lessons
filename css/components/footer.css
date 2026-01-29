@@ -37,13 +37,11 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 2em;
+}
 
-  ul {
-    display: flex;
-    li {
-      list-style: none;
-    }
-  }
+.socials {
+  gap: 1em;
+  display: flex;
 }
 
 .social_media_icon {

@@ -53,12 +53,11 @@
 }
 
 .hideProduct {
-  visibility: hidden;
-  height: 0em;
+  display: none;
 }
 
 .showProduct {
-  visibility: visible;
+  display: initial;
   height: auto;
   list-style: none;
 }
