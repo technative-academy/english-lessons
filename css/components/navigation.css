@@ -2,10 +2,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 10em;
-  padding-right: 10em;
+  justify-content: space-evenly;
 }
 
 nav a {
