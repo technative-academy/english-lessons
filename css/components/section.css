@@ -72,3 +72,12 @@ section.horizontal {
     flex: 1;
   }
 }
+
+@media (width <= 48em) {
+  section.horizontal {
+    flex-direction: column;
+  }
+  section.horizontal.mobile-reverse {
+    flex-direction: column-reverse;
+  }
+}
