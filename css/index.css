@@ -33,3 +33,19 @@
   padding: 4em 0; /* vertical only */
   text-align: center;
 }
+
+#sponsor_text {
+  text-align: center;
+}
+
+#sponsor_logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+#slack_logo,
+#airbnb_logo {
+  margin: 0.4rem;
+}
