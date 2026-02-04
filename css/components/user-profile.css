@@ -16,6 +16,31 @@ button.active {
   display: none;
 }
 
+.tab-content-image {
+  aspect-ratio: 2;
+}
+
 .quoteSelected {
   display: initial;
+}
+
+.tab-buttons.vertical {
+  display: flex;
+  flex-direction: column;
+  min-width: 20%;
+  gap: 0.5em;
+
+  .user_profile {
+    flex-grow: 1;
+  }
+
+  .user_profile.active {
+    border-left: 1px solid var(--color-primary);
+    border-top: none;
+  }
+}
+
+.tab-container.horizontal {
+  display: flex;
+  gap: 1em;
 }

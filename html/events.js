@@ -1,27 +1,34 @@
-var profileButtonElements = document.querySelectorAll(".user_profile");
+let tabContainer = document.querySelectorAll(".tab-container");
 
-profileButtonElements.forEach(addButtonListener);
+tabContainer.forEach((container) => {
 
-function addButtonListener(profileButtonElement) {
-  profileButtonElement.addEventListener("click", profileButtonClick);
-}
+  var profileButtonElements = container.querySelectorAll(".tab-button");
 
-function profileButtonClick(event) {
-  const clickedButton = event.currentTarget;
-  //alert("You clicked" + clickedButton.textContent);
-  const contentElements = document.querySelectorAll(".tab-content");
-  console.log(contentElements);
-  //var index = Array.from(profileButtonElements).indexOf(contentElements);
-  const index = [...profileButtonElements].indexOf(event.currentTarget);
-  console.log(index);
+  profileButtonElements.forEach(addButtonListener);
 
-  contentElements.forEach((content) =>
-    content.classList.remove("quoteSelected"),
-  );
-  contentElements[index].classList.add("quoteSelected");
+  function addButtonListener(profileButtonElement) {
+    profileButtonElement.addEventListener("click", profileButtonClick);
+  }
 
-  profileButtonElements.forEach((buttonElement) =>
-    buttonElement.classList.remove("active"),
-  );
-  profileButtonElements[index].classList.add("active");
-}
+  function profileButtonClick(event) {
+    const clickedButton = event.currentTarget;
+    //alert("You clicked" + clickedButton.textContent);
+    const contentElements = container.querySelectorAll(".tab-content");
+    console.log(contentElements);
+    //var index = Array.from(profileButtonElements).indexOf(contentElements);
+    const index = [...profileButtonElements].indexOf(event.currentTarget);
+    console.log(index);
+
+    contentElements.forEach((content) =>
+      content.classList.remove("quoteSelected"),
+    );
+    contentElements[index].classList.add("quoteSelected");
+
+    profileButtonElements.forEach((buttonElement) =>
+      buttonElement.classList.remove("active"),
+    );
+    profileButtonElements[index].classList.add("active");
+  }
+
+
+})
